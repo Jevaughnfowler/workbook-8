@@ -20,7 +20,7 @@ public class Main {
         Statement statement = connection.createStatement();
 
 
-        String query = "SELECT city FROM city WHERE country_id = 103";
+        String query = "SELECT city FROM city WHERE country_id = ?";
         ResultSet results = statement.executeQuery(query);
 
 

@@ -11,6 +11,8 @@ public class Northwind {
 
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection connection = DriverManager.getConnection(connectionString, username, password);
+
+
         Statement statement = connection.createStatement();
 
         String query = "SELECT productID, productName, unitPrice, unitsInStock FROM products";
